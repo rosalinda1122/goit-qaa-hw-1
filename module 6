@@ -1,0 +1,26 @@
+//This jest to miejsce, kontekst, w którym wywoływany jest dany kawałek kodu.
+
+const person = {
+    username: "Maciej",
+    showName: function() {
+        console.log(this.username);
+    }
+}
+person.showName();
+\\\\\\\\\\
+//Tworzenie obiektu reprezentującego półkę na książki
+//Dodawanie do tablicy i wyświetlanie autorów
+const bookshelf = {  
+    authors: [],
+    getAuthors: function() {
+        return this.authors;
+    },
+    addAuthor(authorName) {
+        this.authors.push(authorName);  
+},
+};
+
+bookshelf.addAuthor("J.K. Rowling");
+bookshelf.addAuthor("K.Bonda");
+
+console.log(bookshelf.getAuthors());
