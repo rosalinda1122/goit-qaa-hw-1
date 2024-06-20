@@ -1,0 +1,24 @@
+///user.json
+{
+    "name": "Josh",
+    "weight": "175",
+    "age": 30,
+    "eyecolor": "brown",
+    "isHappy": "true",
+    "cars": ["Chevy", "Honda"],
+    "favoritBook": {
+        "title": "The Last Kingdom",
+        "author": "Bernard Cornwell",
+        "rating": 8.38    }
+}
+///script.js
+const invalidJson = '{"name":"Mango","age":3,"isHappy":true}}'; 
+try {
+    const obj = JSON.parse(invalidJson);
+    console.log(obj);
+} catch (error) {
+    console.error("Name:", error.name);
+    console.error("Message:", error.message);
+}
+
+console.log('działaj dalej pomimo błędu')
