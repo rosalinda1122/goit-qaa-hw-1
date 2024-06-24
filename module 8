@@ -1,12 +1,12 @@
 ///user.json
 {
-    "name": "Josh",
-    "weight": "175",
-    "age": 30,
-    "eyecolor": "brown",
-    "isHappy": "true",
-    "cars": ["Chevy", "Honda"],
-    "favoritBook": {
+    "name": "Josh",  //wskazuje imię, typ: string
+    "weight": "175", //wskazuje wzrost, typ: number
+    "age": 30, // wskazuje wiek, typ:number
+    "eyecolor": "brown", // wskazuje kolor oczu, string
+    "isHappy": "true",  //wskaźnik isHappy: boolean
+    "cars": ["Chevy", "Honda"],  // marki samochodów: string (więcej niż jedna, dlatego w nawiasie kwadratowym)
+    "favoritBook": {          // szczegóły książki takie jak tytuł, autor, ocena    
         "title": "The Last Kingdom",
         "author": "Bernard Cornwell",
         "rating": 8.38    }
